@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>【2026年度年間目標】アプリケーション開発ログ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="LearnLog.css">
+</head>
+<body>
+
+<header>
+    <div class="site-title container">
+        <h1>Learning Log</h1>
+    </div>
+</header>
+
+<div class="navigate">
+        <nav>
+            <a href="LearnLog.html">Home</a>
+            <a href="about.html">About me</a>
+
+            <div class="dropdown">
+                <a href="log.html" class="dropbtn">Learning Log</a>
+
+                <div class="dropdown-content">
+                  <a href="log.html#m2026-06">2026年6月</a>
+                  <a href="log.html#m2026-05">2026年5月</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="Knowledge.html" class="dropbtn">Knowledge</a>
+                <div class="dropdown-content">
+                    <a href="Knowledge.html#HTMLCSS">HTML/CSS</a>
+                    <a href="Knowledge.html#Basic">開発基礎</a>
+                </div>
+            </div>
+        </nav>
+</div>
+
+<div class="top-contents">
+<div class="container">
+
+  <h2 class="contents-title">学習ログ一覧</h2>
+
+
+  <details class="month" id="m2026-06">
+    <summary>2026年6月</summary>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>【アプリケーション開発ログ】Webページ作成 【3日目】</h2>
+      <p>学習ログ・ナレッジページ及び全体レイアウトの修正。</p>
+      <p><br>学習ログページでは、本日までの学習ログを記載。</p>
+      <p>ナレッジページは、学習ログと近似したレイアウトにしたが、ナレッジが増えた場合に使いづらさを感じそうなので、要検討、、、</p>
+      <p>全体レイアウトはフォントの変更、英語・日本語の使い分けの検討などを実施。</p>
+      <p><br>いったんここまでで大枠作成完了として、GitHubへアップロード。</p>
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/01</div>
+      <h2>【アプリケーション開発ログ】Webページ作成 【2日目】</h2>
+      <p>自己紹介ページの編集及び全体レイアウトの修正。</p>
+      <p><br>自己紹介ページでは記載内容の決定、画像の挿入、自己紹介ページ特有のレイアウトの決定などを実施。</p>
+      <p>全体レイアウトはナビゲーションタブにホバー時の動作を追加したり、全体・ヘッダー背景の決定などを実施。</p>
+    </div>
+
+  </details>
+
+  <details class="month" id="m2026-05">
+    <summary>2026年5月</summary>
+
+    <div class="card-log">
+      <div class="date">2026/05/30</div>
+      <h2>【アプリケーション開発ログ】Webページ作成 【1日目】</h2>
+      <p>一通りHTML/CSSの学習が終わったので、成果物として静的Webページ（本ページ）を作成。</p>
+      <p>内容はアプリケーション開発に関する学習ログ・ナレッジ（＋ちょっとした自己紹介）。</p>
+      <p><br>1日目は内容の検討、全体の構成・レイアウトを決定し作成。</p>
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/05/01 ～ 2026/05/30</div>
+      <h2>HTML/CSS の基礎をProgateで学習</h2>
+      <p>HTML & CSS入門コースの　<strong>HTML & CSS初級編 ～ HTML & CSS Flexbox編</strong>　まですべて修了。</p>
+      <p>基本的なHTMLのレイアウト、CSSでの装飾、レスポンシブデザイン等について学習。</p>
+      <p><br>併せて、HTML/CSSの開発環境の準備、GitHubアカウントの作成など、開発のための基本的な準備も実施。</p>
+    </div>
+
+  </details>
+
+</div>
+</div>
+
+<footer>
+    <p>画像出典：<a href="https://www.photo-ac.com/">写真AC</a></p>
+    <div></div>
+</footer>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const hash = location.hash; // 例: #2026-05
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target && target.tagName === "DETAILS") {
+        target.setAttribute("open", "open");
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

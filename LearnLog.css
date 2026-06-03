@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.7;
+}
+/* ヘッダー */
+header {
+  font-family: 'Caveat', cursive;
+  background-image: url(header.jpg);
+  background-color:rgba(255, 255, 255, 0.324);
+  background-blend-mode:lighten;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  /* color: #2c3e50; */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.home-title h1 {
+  margin-top: 0px;
+}
+
+.site-title p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+
+/* コンテナ */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+
+/* ナビゲーションリスト */
+nav {
+  margin: 0 auto;
+  background: #34495e;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navigate {
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  letter-spacing: 3px;
+}
+
+nav a,
+nav span
+{
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+}
+
+
+/* ▼ ドロップダウン全体 */
+.dropdown {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* ▼ ナビゲーションボタンにホバーした時の動作 */
+nav a:hover {
+  text-decoration: underline;
+  background-color: #3d5368;
+}
+
+/* ▼ ドロップダウンボックスにホバーした時の動作 */
+.dropdown:hover {
+  text-decoration: underline;
+  background-color: #3d5368;
+}
+
+/* ▼ 親ボタン（学習ログ・ナレッジ） */
+.dropbtn {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ▼ 中身（最初は非表示） */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #34495e;
+  min-width: 170px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* ▼ 中のリンク */
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #3d5368;
+}
+
+/* ▼ ホバーで表示 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* メインコンテンツ */
+.top-contents {
+  background-color: rgb(213, 213, 216); 
+  background-image: url(background.jpg);
+  margin: 0px auto;
+  padding: 40px 20px;
+}
+
+.title h2 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.title p {
+    width: 73%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.title img {
+    width: 100%;
+}
+
+.site-log{
+  font-size: 14px;
+}
+
+.contents-title {
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+
+
+/* 変更ログ全体 */
+.apdate-log {
+  height: 200px;
+  overflow-y: auto;
+}
+
+/* 変更ログ中身 */
+.site-log {
+  max-width: 750px;
+  margin: 40px auto;
+  background: rgb(253, 253, 253);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  line-height: 1;
+  border: 2px solid #39414a6c;
+}
+
+
+
+/* 追加するカード */
+.card {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow:
+    0 0 10px rgba(0,0,0,0.2),
+    0 0 10px rgba(0,0,0,0.2) inset;
+  line-height: 1;
+  border: 1px solid #a7b0ba; 
+}
+/* box-shadow: 0 4px 10px rgba(0,0,0,0.05); */
+
+
+
+/* 自己紹介トップページ */
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background-image: url(background.jpg);
+  border-radius: 10px;
+  border: 10px solid rgb(255, 255, 255,0.8);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.name {
+  margin: 0 auto;
+  text-align: center; 
+  line-height: 0.8;
+}
+
+.name h1 {
+  font-family: 'Caveat', cursive;
+  letter-spacing: 3px;
+}
+
+/* 自己紹介カード */
+.card-about {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  line-height: 1;
+  text-align: center;
+}
+
+.card-about p {
+  line-height: 0.8;
+}
+
+.card-about-wrapper{
+  padding-top: 15px;
+}
+
+/* 自己紹介画像 */
+.img-wrapper img {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  text-align: center;
+}
+
+
+
+/* 学習ログのセクション */
+.card-log {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  line-height: 1.5;
+}
+
+.card-log p,
+.card-log div
+{
+  margin: 7px auto;
+  line-height: 1.2;
+}
+
+.card-log h2 {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.card-log img {
+  width: 100%;
+}
+
+.border-top {
+  border-top: 2px solid #333;
+}
+
+.border-bottom {
+  border-bottom: 2px solid #333;
+}
+
+/* 月ごとのアコーディオン */
+.month {
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+/* summary（見出し部分） */
+.month summary {
+  padding: 18px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* summary のホバー */
+.month summary:hover {
+  background: #3d5368;
+}
+
+/* summary のデフォルトの矢印を消す（Chrome/Edge） */
+.month summary::-webkit-details-marker {
+  display: none;
+}
+
+/* summary の右側に矢印をつける */
+.month summary::after {
+  content: "▼";
+  float: right;
+  transition: transform 0.3s;
+}
+
+/* 開いたときに矢印を回転 */
+.month[open] summary::after {
+  transform: rotate(180deg);
+}
+
+/* フッター */
+footer {
+  background-color: #34495e;
+  color: white;
+  /*color: #2c3e50; */
+  padding: 20px 20px;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 0px 15px;
+}

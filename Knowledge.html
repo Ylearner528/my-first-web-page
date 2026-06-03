@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>【2026年度年間目標】アプリケーション開発ログ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="LearnLog.css">
+</head>
+<body>
+
+<header>
+    <div class="site-title container">
+        <h1>Knowledge</h1>
+    </div>
+</header>
+
+<div class="navigate">
+        <nav>
+            <a href="LearnLog.html">Home</a>
+            <a href="about.html">About me</a>
+
+            <div class="dropdown">
+                <a href="log.html" class="dropbtn">Learning Log</a>
+
+                <div class="dropdown-content">
+                  <a href="log.html#m2026-06">2026年6月</a>
+                  <a href="log.html#m2026-05">2026年5月</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="Knowledge.html" class="dropbtn">Knowledge</a>
+                <div class="dropdown-content">
+                    <a href="Knowledge.html#HTMLCSS">HTML/CSS</a>
+                    <a href="Knowledge.html#Basic">開発基礎</a>
+                </div>
+            </div>
+        </nav>
+</div>
+
+<div class="top-contents">
+<div class="container">
+
+  <h2 class="contents-title">ナレッジ一覧</h2>
+
+
+  <details class="month" id="HTMLCSS">
+    <summary>HTML/CSS</summary>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>display:Flex で設定できるプロパティについて（一部）</h2>
+
+      <p class="border-top"></p>
+      <p>①<strong>flex-wrap</strong></p>
+      <p>　→折り返しの有無（適用したい要素の<strong>親要素</strong>に設定）。デフォルトで折り返しなし。<br><br></p>
+      <p>②<strong>flex-direction</strong></p>
+      <p>　→要素の並び方向（適用したい要素の<strong>親要素</strong>に設定）。デフォルトで行（row）。列（column）を設定可能。<br><br></p>
+      <p>③<strong>flex</strong></p>
+      <p>　→autoで要素の幅を親の要素いっぱいまで広げる（<strong>適用したい要素</strong>に設定）。</p>
+      <p class="border-bottom"></p>
+
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>Widthで相対割付する場合の、PaddingやBorderの取り扱いについて</h2>
+      <p>Widthで相対割付する場合、要素のPaddingやBorderは割付の範囲に<strong>入らない</strong>。</p>
+      <p>例えば、4つのimgに対して25%で割付、そこにborder、Paddingを加えると100%を超えて要素（＝img）が下に回り込んでしまう。</p>
+      <p>そこで、<strong>box-sizeing</strong> を <strong>border-box </strong>にしてあげることで、borderやPaddingも割付の範囲に入れてあげることができる</p>
+      <p>（ちなみにMarginはborderの外に作るものなので、割付の範囲に入らない）</p>
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>containerタグを利用する意味</h2>
+      <p>背景の前に出てくる要素すべてを一定の幅内で均等に割り付けたい場合、それらの要素をどんなタグ（ヘッダーやメインのコンテンツ）でもcontainerの中に一律で入れてあげることで、いちいちwidthやmargin autoを書いてあげなくてもよくなる。</p>
+      <p>ちなみに、背景前に配置する要素群にwidthやmargin auto を指定しない場合、要素が背景めいいっぱいに広がって、見づらくなるため、設定必須。</p>
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>インライン要素 と ボックス要素で挙動が違うプロパティについて</h2>
+      <p>同じプロパティに同じ指定をしても、インライン要素 か ブロック要素かで挙動が異なることも多い。<br><br></p>
+
+      <p class="border-top"></p>
+      <p>①<strong>width / height</strong></p>
+      <p>　→インライン要素には効かない<br><br></p>
+      <p>②<strong>margin-top / margin-bottom</strong></p>
+      <p>　→インライン要素には効かない（左右は効く）<br><br></p>
+      <p>③<strong>padding-top / padding-bottom</strong></p>
+      <p>　→インライン要素においては、背景色やボーダーは広がるが、<strong>行ボックスの高さは変わらない（＝レイアウト的には広がらない）</strong>。<br><br></p>
+      <p>④<strong>border</strong></p>
+      <p>　→インライン要素においては、上下の border は表示されるが、<strong>行の高さは変わらない（＝レイアウト的には広がらない）<br><br></strong></p>
+      <p>⑤<strong>overflow</strong></p>
+      <p>　→インライン要素には効かない（インライン要素は箱ではないので、はみ出し制御ができない）<br><br></p>
+      <p>⑥<strong>text-align</strong></p>
+      <p>　→インライン要素には効かない（親要素に設定すれば効く）<br><br></p>
+      <p>⑦<strong>vertical-align</strong></p>
+      <p>　→インライン要素<strong>のみに</strong>効く（インライン要素の縦位置調整）</p>
+      <p class="border-bottom"></p>
+
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>transitionプロパティについて</h2>
+      <p>指定した要素において、状態変化が生ずるようなセレクタ（hover、focusなど）にアニメーション（ ＝ 指定した時間をかけて徐々に変化する）をつけることができる。</p>
+      <p>また、アニメーションを適用するプロパティは指定することができる（色、高さ、余白サイズ、文字のサイズなど、またはそのすべて）。</p>
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>line-height と padding の使い分け</h2>
+      <p>行間の調整をしたい場合に選択肢に上がってくるのが、line-height と padding。</p>
+      <p>見た目が似通うことがあるが、動作は異なっているため、違いの把握が必要。<br><br></p>
+
+      <p class="border-top"></p>
+      <p><strong>◆line-height</strong></p>
+      <p>①<strong>テキスト行そのものの高さ</strong>を調整する。</p>
+      <p>②<strong>行を折り返したときなど、一つの要素内で複数行になる場合</strong>に特に効果がみえる。</p>
+
+      <p><br><strong>◆padding</strong></p>
+      <p>①<strong>要素の内側の余白（＝ テキストの外側 かつ ボーダーの内側の余白）</strong>を調整する。</p>
+      <p>②テキスト行そのものの高さには影響しない（paddingだけでテキスト間の距離を調整しようとすると、画面サイズがちいさくなるなどして行が折り返し複数行になった時に、想定とは違う見た目になったりするので注意（経験済、、、））。</p>
+      <p class="border-bottom"></p>
+
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>opacity と rgba() の使い分けについて</h2>
+      <p>要素の透明度を変更したい場合に選択肢に上がってくるのが、opacity と rgba() 。</p>
+      <p>これらは作用する”対象”が違うため、理解しておく必要がある。<br><br></p>
+
+      <p class="border-top"></p>
+      <p><strong>◆opacity</strong></p>
+      <p><strong>指定した要素内の全体</strong>の透明度を変更できる（背景色、テキスト、画像、ボーダー、シャドウ など）。</p>
+      <p>さらにこれらは<strong>子要素にも継承される</strong></p>
+
+      <p><br><strong>◆rgba() </strong></p>
+      <p>background-color や color の指定で利用することで<strong>指定した要素内のみ</strong>透明度を変更できる（background-colorなら背景色、colorならテキストなど）。</p>
+      <p class="border-bottom"></p>
+
+      <p><br>テキストや背景だけ透明度を変えたいのか、ホバー時の動作などで要素全体（ボタンとか）の透明度を変えたいのか、などで使い分けするとよい。</p>
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>text-align: center と margin: auto の使い分け</h2>
+      <p>要素を中央よせにしたい場合に選択肢に上がってくるのが、text-align: center と margin: auto。</p>
+      <p>どちらも作用が似ているが、動きとしては結構違いがある。<br><br></p>
+
+      <p class="border-top"></p>
+      <p><strong>◆text-align: center</strong></p>
+      <p>①作用する対象は<strong>inline要素（span, a, img など）</strong></p>
+      <p>②ブロック内の<strong>中身だけが</strong>中央に寄る</p>
+      <p>③作用させたい対象の<strong>親要素</strong>に設定する。</p>
+
+      <p><br><strong>◆margin: auto</strong></p>
+      <p>①作用する対象は<strong>block要素（div, p, section など）</strong></p>
+      <p>②<strong>ブロック自体が</strong>中央に寄る</p>
+      <p>③<strong>作用させたい要素</strong>に設定する。</p>
+      <p class="border-bottom"></p>
+
+      <p><br>自分がどちらの動きを望むのか、どこに作用させるべきか、しっかり理解して使い分けたいところ。</p>
+    </div>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>Floatプロパティ と displyプロパティの使い分け</h2>
+      <p>要素を横並びにしたい場合に選択肢に上がってくるのが、Floatプロパティとdisplyプロパティ。</p>
+      <p>どこで使い分けるのか疑問に思っていたが、”要素を横並びにしたい”という目的の場合には、<strong> disply:flex </strong>を使うのがスマートのよう。</p>
+      <p><br>というのも、<strong> disply:flex </strong>は、画面サイズに合わせて横並びにしたい要素の親要素の横幅のサイズを相対的に変えたり、回り込む要素の決定などができ、<strong> レスポンシブデザイン </strong>に対応させるのが容易。</p>
+      <p><br><strong> Float </strong>は、そもそも要素の横並びというよりは、要素を”回り込ませる”ためのプロパティなので、意図しない回り込みが起きたりなど、レスポンシブデザインに対応させるのに不向き。</p>
+      <p><br>よって、<strong>横並びは disply:flex </strong>、<strong>要素の横に画像を回り込ませたいときは floatプロパティ </strong>と使い分けるのが良いかも。</p>
+    </div>
+
+  </details>
+
+
+  <details class="month" id="Basic">
+    <summary>開発基礎</summary>
+
+    <div class="card-log">
+      <div class="date">2026/06/03</div>
+      <h2>ドメインとサブドメイン</h2>
+      <p>サブドメインは、ドメインで提供しているサービスとは異なるサービスを適用したいときに使ったりする。</p>
+      <p><br>（例）Yahooフリマ</p>
+      <img src="サブドメイン.png">
+      <p>※出典：ヤフーフリマ（Yahoo! JAPAN）</p>
+    </div>
+
+  </details>
+
+
+</div>
+</div>
+
+<footer>
+    <p>画像出典：<a href="https://www.photo-ac.com/">写真AC</a></p>
+    <div></div>
+</footer>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const hash = location.hash; // 例: #2026-05
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target && target.tagName === "DETAILS") {
+        target.setAttribute("open", "open");
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
