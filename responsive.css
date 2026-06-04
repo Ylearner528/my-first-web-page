@@ -1,0 +1,33 @@
+/* スマホ向けデザイン */
+@media ( max-width:670px ) {
+
+.container {
+  margin: 0px auto;
+  padding: 0 20px;
+}
+
+header {
+    max-height: 100px;
+    padding: 25px 20px;
+}
+
+.site-title h1 {
+
+    font-size: 23px;
+    margin: 0px;
+}
+
+.site-title p {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px;
+}
+
+/* ナビゲーションリスト（PC用）非表示 */
+/* ！！！作成中！！！*/
+/* .navigate { 
+    display: none;
+}*/
+
+
+} 

@@ -48,6 +48,7 @@ header h1 {
 
 
 
+
 /* ナビゲーションリスト */
 nav {
   margin: 0 auto;
@@ -136,6 +137,13 @@ nav a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* ナビゲーションリスト（モバイル用） */
+/* ！！！作成中！！！*/
+.navigate-mobile { 
+    display: none;
+}
+
 
 
 
@@ -232,12 +240,16 @@ nav a:hover {
 .name {
   margin: 0 auto;
   text-align: center; 
-  line-height: 0.8;
+  line-height: 1;
 }
 
 .name h1 {
   font-family: 'Caveat', cursive;
   letter-spacing: 3px;
+}
+
+.name p {
+  margin: 10px 0;
 }
 
 /* 自己紹介カード */
@@ -253,8 +265,11 @@ nav a:hover {
   text-align: center;
 }
 
-.card-about p {
-  line-height: 0.8;
+.card-about p,
+.card-about h3
+ {
+  line-height: 1;
+  margin: 10px 0;
 }
 
 .card-about-wrapper{
