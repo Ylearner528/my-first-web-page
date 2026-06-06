@@ -1,6 +1,7 @@
 /* スマホ向けデザイン */
 @media ( max-width:670px ) {
 
+/* ヘッダーサイズの変更 */
 .container {
   margin: 0px auto;
   padding: 0 20px;
@@ -23,11 +24,47 @@ header {
     margin: 0px;
 }
 
+/* ナビゲーションタブのサイズ変更 */
+nav {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+nav a {
+  padding: 5px 10px;
+  margin: 0 auto;;
+  letter-spacing: 1px;
+}
+
+.dropdown {
+  margin: 0 auto;
+}
+
+
+nav a,
+nav span
+{
+  font-size: 15px;
+}
+
+
 /* ナビゲーションリスト（PC用）非表示 */
 /* ！！！作成中！！！*/
 /* .navigate { 
     display: none;
 }*/
 
+
+/* フッターサイズの変更 */
+footer {
+  padding: 15px 15px;
+  font-size: 10px;
+}
+
+footer p {
+  margin: 0px 10px;
+}
 
 } 
